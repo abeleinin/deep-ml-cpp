@@ -1,3 +1,3 @@
 # Deep ML
 
-Solutions to [deep-ml](www.deep-ml.com) in C++
+Solutions to [deep-ml](https://www.deep-ml.com/) in C++
