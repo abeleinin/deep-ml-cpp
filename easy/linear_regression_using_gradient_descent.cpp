@@ -20,8 +20,8 @@ VectorXd linear_regression(const MatrixXd& X,
         // (m, n) @ (n, 1) -> (m, 1)
         MatrixXd pred = X * theta;
 
-        // (3) -> (3, 1)
-        MatrixXd y_reshape = y.reshaped(3, 1);
+        // (m) -> (m, 1)
+        MatrixXd y_reshape = y.reshaped(y.size(), 1);
 
         MatrixXd errors = pred - y_reshape;        
 
