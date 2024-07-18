@@ -10,7 +10,7 @@ bool are_close(double a, double b, double tolerance) {
 
 #define ASSERT_CLOSE(a, b, tolerance) assert(are_close(a, b, tolerance))
 
-double sigmoid(const double& x)
+double sigmoid(double x)
 {
     // \frac{1}{1 + e^{-x}}
     return 1 / (1 + exp(-x));
