@@ -1,9 +1,11 @@
-#include <iostream>
 #include <Eigen/Dense>
 
+#include <iostream>
+
+using namespace std;
 using namespace Eigen;
 
-std::pair<MatrixXd, VectorXd> feature_scaling(const MatrixXd& data)
+std::pair<MatrixXd, MatrixXd> feature_scaling(const MatrixXd& data)
 {
     VectorXd mean = data.colwise().mean();
 
@@ -14,10 +16,9 @@ std::pair<MatrixXd, VectorXd> feature_scaling(const MatrixXd& data)
 
     MatrixXd standardized = d.array().rowwise() / std.transpose().array();
 
-
     VectorXd min_val = data.colwise().minCoeff();
     VectorXd max_val = data.colwise().maxCoeff();
-    VectorXd normal = (data.rowwise() - min_val.transpose()).array().rowwise() / (max_val - min_val).transpose().array();
+    MatrixXd normal = (data.rowwise() - min_val.transpose()).array().rowwise() / (max_val - min_val).transpose().array();
 
     return {standardized, normal};
 }
@@ -30,8 +31,8 @@ int main() {
 
     auto result = feature_scaling(data);
 
-    // std::cout << result.first << std::endl;
-    // std::cout << result.second << std::endl;
+    cout << result.first << endl;
+    cout << result.second << endl;
 
     return 0;
 }
