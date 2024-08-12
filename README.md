@@ -17,6 +17,8 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 3  | [Reshape Matrix](https://www.deep-ml.com/problem/Reshape%20Matrix) | Easy | [C++](easy/reshape.cpp) |
 | 4  | [Calculate Mean by Row or Column](https://www.deep-ml.com/problem/Calculate%20Mean%20by%20Row%20or%20Column) | Easy | [C++](easy/calculate_matrix_mean.cpp) |
 | 5  | [Scalar Multiplication of a Matrix](https://www.deep-ml.com/problem/Scalar%20Multiplication%20of%20a%20Matrix) | Easy | [C++](easy/scalar_multiply.cpp) |
+| 35 | [Convert Vector to Diagonal Matrix](https://www.deep-ml.com/problem/Convert%20Vector%20to%20Diagonal%20Matrix) | Easy | [C++](easy/vector_to_diagongal_matrix.cpp) |
+| 36 | [Calculate Accuracy Score](https://www.deep-ml.com/problem/Calculate%20Accuracy%20Score) | Easy | [C++](easy/accuracy_score.cpp) |
 
 ## Machine Learning
 
