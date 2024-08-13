@@ -14,6 +14,7 @@ set(MEDIUM_DIR ${CMAKE_SOURCE_DIR}/medium)
 set(TEST_DIR ${CMAKE_SOURCE_DIR}/tests)
 
 # Include directories
+include_directories(/opt/homebrew/include/eigen3)
 include_directories(/opt/homebrew/include/)
 include_directories(${EASY_DIR})
 

@@ -1,8 +1,5 @@
 #include <Eigen/Dense>
 
-#include <iostream>
-
-using namespace std;
 using namespace Eigen;
 
 std::pair<MatrixXd, MatrixXd> feature_scaling(const MatrixXd& data)
@@ -22,17 +19,3 @@ std::pair<MatrixXd, MatrixXd> feature_scaling(const MatrixXd& data)
 
     return {standardized, normal};
 }
-
-// int main() {
-//     MatrixXd data(3, 2);
-//     data << 1, 2,
-//             3, 4,
-//             5, 6;
-
-//     auto result = feature_scaling(data);
-
-//     cout << result.first << endl;
-//     cout << result.second << endl;
-
-//     return 0;
-// }

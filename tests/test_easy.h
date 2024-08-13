@@ -3,18 +3,50 @@
 
 #include <Eigen/Dense>
 
+#include <catch2/catch_test_macros.hpp>
+
 #include <vector>
 #include <cmath>
-#include <cassert>
 
 using namespace std;
 using namespace Eigen;
 
-bool are_close(double a, double b, double tolerance) {
+bool all_close(double a, double b, float tolerance) {
     return fabs(a - b) < tolerance;
 }
 
-#define ASSERT_CLOSE(a, b, tolerance) assert(are_close(a, b, tolerance))
+template <typename T>
+bool all_close(const T& a, const T& b, float tolerance) {
+    if (a.size() != b.size()) {
+        return false;
+    }
+
+    for (int i = 0; i < a.size(); ++i) {
+        if (std::abs(a[i] - b[i]) > tolerance) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+bool all_close(const MatrixXd& a, const MatrixXd& b, float tolerance) {
+    if (a.rows() != b.rows() || a.cols() != b.cols()) {
+        return false;
+    }
+
+    for (int i = 0; i < a.rows(); ++i) {
+        for (int j = 0; j < a.cols(); ++j) {
+            if (std::abs(a(i, j) - b(i, j)) > tolerance) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+#define REQUIRE_CLOSE(a, b, tolerance) REQUIRE(all_close(a, b, tolerance))
 
 /**
  * 
@@ -34,10 +66,11 @@ std::pair<MatrixXd, MatrixXd> feature_scaling(const MatrixXd& data);
 /**
  * 
  */
-VectorXd linear_regression_gradient_descent(const MatrixXd& X, 
-                                            const VectorXd& y,
-                                            const float& alpha,
-                                            const int& iterations);
+VectorXd linear_regression_gradient_descent(
+    const MatrixXd& X, 
+    const VectorXd& y,
+    const float& alpha,
+    const int& iterations);
 
 /**
  * 
@@ -73,10 +106,11 @@ MatrixXd scalar_multiply(const MatrixXd& matrix, float scalar);
 /**
  * 
  */
-pair<VectorXd, float> single_neuron(const MatrixXd& features, 
-                                    const VectorXd& labels,
-                                    const VectorXd& weights, 
-                                    float bias);
+pair<VectorXd, double> single_neuron(
+    const MatrixXd& features, 
+    const VectorXd& labels,
+    const VectorXd& weights, 
+    double bias);
 
 /**
  * 
