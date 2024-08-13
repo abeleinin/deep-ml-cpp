@@ -15,22 +15,22 @@ MatrixXd reshape(const MatrixXd& a, const tuple<int, int>& new_shape)
     return a.reshaped<RowMajor>(rows, cols);
 }
 
-int main(void)
-{
-    // a is in memory using Column-major storage
-    MatrixXd a(2, 4);
-    a << 1, 2, 3, 4,
-         5, 6, 7, 8; 
+// int main(void)
+// {
+//     // a is in memory using Column-major storage
+//     MatrixXd a(2, 4);
+//     a << 1, 2, 3, 4,
+//          5, 6, 7, 8; 
 
-    MatrixXd expected(4, 2);
-    expected << 1, 2, 
-                3, 4,
-                5, 6,
-                7, 8; 
+//     MatrixXd expected(4, 2);
+//     expected << 1, 2, 
+//                 3, 4,
+//                 5, 6,
+//                 7, 8; 
     
-    MatrixXd result = reshape(a, make_tuple(4, 2));
+//     MatrixXd result = reshape(a, make_tuple(4, 2));
 
-    assert(result == expected);
+//     assert(result == expected);
 
-    return 0;
-}
+//     return 0;
+// }

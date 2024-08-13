@@ -23,16 +23,16 @@ std::pair<MatrixXd, MatrixXd> feature_scaling(const MatrixXd& data)
     return {standardized, normal};
 }
 
-int main() {
-    MatrixXd data(3, 2);
-    data << 1, 2,
-            3, 4,
-            5, 6;
+// int main() {
+//     MatrixXd data(3, 2);
+//     data << 1, 2,
+//             3, 4,
+//             5, 6;
 
-    auto result = feature_scaling(data);
+//     auto result = feature_scaling(data);
 
-    cout << result.first << endl;
-    cout << result.second << endl;
+//     cout << result.first << endl;
+//     cout << result.second << endl;
 
-    return 0;
-}
+//     return 0;
+// }

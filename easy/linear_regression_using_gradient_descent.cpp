@@ -8,7 +8,7 @@
 using namespace std;
 using namespace Eigen;
 
-VectorXd linear_regression(const MatrixXd& X, 
+VectorXd linear_regression_gradient_descent(const MatrixXd& X, 
                            const VectorXd& y,
                            const float& alpha,
                            const int& iterations)
@@ -33,21 +33,21 @@ VectorXd linear_regression(const MatrixXd& X,
     return theta_flattened;
 }
 
-int main(void)
-{
-    MatrixXd X(3, 2);
-    X << 1, 1,
-         1, 2,
-         1, 3;
+// int main(void)
+// {
+//     MatrixXd X(3, 2);
+//     X << 1, 1,
+//          1, 2,
+//          1, 3;
 
-    VectorXd y(3);
-    y << 1, 2, 3;
+//     VectorXd y(3);
+//     y << 1, 2, 3;
 
-    VectorXd expected(2);
-    expected << 0.110715, 0.951296;
+//     VectorXd expected(2);
+//     expected << 0.110715, 0.951296;
 
-    VectorXd result = linear_regression(X, y, 0.01, 1000);
-    cout << result << endl;
-    cout << expected << endl;
-    return 0;
-}
+//     VectorXd result = linear_regression_gradient_descent(X, y, 0.01, 1000);
+//     cout << result << endl;
+//     cout << expected << endl;
+//     return 0;
+// }

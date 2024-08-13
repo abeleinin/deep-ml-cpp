@@ -17,26 +17,26 @@ MatrixXd transpose(const MatrixXd& x)
     return transpose;
 }
 
-int main(void)
-{
-    MatrixXd a(2, 3);
-    a << 1, 2, 3,
-         3, 4, 5;
+// int main(void)
+// {
+//     MatrixXd a(2, 3);
+//     a << 1, 2, 3,
+//          3, 4, 5;
 
-    // Test 1
-    MatrixXd result;
-    result = transpose(a);
-    assert(result == a.transpose());
+//     // Test 1
+//     MatrixXd result;
+//     result = transpose(a);
+//     assert(result == a.transpose());
 
-    MatrixXd b(5, 3);
-    b << 1, 2, 3,
-         4, 5, 6,
-         7, 8, 9,
-         10, 11, 12,
-         13, 14, 15;
+//     MatrixXd b(5, 3);
+//     b << 1, 2, 3,
+//          4, 5, 6,
+//          7, 8, 9,
+//          10, 11, 12,
+//          13, 14, 15;
 
-    // Test 2
-    result = transpose(b);
-    assert(result == b.transpose());
-    return 0;
-}
+//     // Test 2
+//     result = transpose(b);
+//     assert(result == b.transpose());
+//     return 0;
+// }

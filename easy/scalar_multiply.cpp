@@ -22,30 +22,30 @@ MatrixXd scalar_multiply(const MatrixXd& matrix, float scalar)
     return matrix * scalar;
 }
 
-int main(void)
-{
-    // Test vector
-    vector<vector<double>> b, expected_vec;
+// int main(void)
+// {
+//     // Test vector
+//     vector<vector<double>> b, expected_vec;
 
-    b = {{1.0, 2.0}, {3.0, 4.0}};
-    expected_vec = {{2.0, 4.0}, {6.0, 8.0}};
+//     b = {{1.0, 2.0}, {3.0, 4.0}};
+//     expected_vec = {{2.0, 4.0}, {6.0, 8.0}};
 
-    scalar_multiply(b, 2);
+//     scalar_multiply(b, 2);
 
-    assert(b == expected_vec);
+//     assert(b == expected_vec);
 
-    // Test eigen
-    MatrixXd a(2, 2);
-    a << 1, 2,
-         3, 4;
+//     // Test eigen
+//     MatrixXd a(2, 2);
+//     a << 1, 2,
+//          3, 4;
 
-    MatrixXd expected(2, 2);
-    expected << 2, 4,
-                6, 8;
+//     MatrixXd expected(2, 2);
+//     expected << 2, 4,
+//                 6, 8;
     
-    MatrixXd result = scalar_multiply(a, 2);
+//     MatrixXd result = scalar_multiply(a, 2);
 
-    assert(result == expected);
+//     assert(result == expected);
 
-    return 0;
-}
+//     return 0;
+// }

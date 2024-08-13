@@ -31,13 +31,13 @@ vector<vector<double>> calculated_covariance_matrix(const vector<vector<double>>
     return cov_matrix;
 }
 
-int main(void)
-{
-    vector<vector<double>> features, expected, result;
-    features = {{1, 2, 3},{4, 5, 6}};
-    expected = {{1.0, 1.0}, {1.0, 1.0}};
+// int main(void)
+// {
+//     vector<vector<double>> features, expected, result;
+//     features = {{1, 2, 3},{4, 5, 6}};
+//     expected = {{1.0, 1.0}, {1.0, 1.0}};
 
-    result = calculated_covariance_matrix(features);
+//     result = calculated_covariance_matrix(features);
 
-    assert(result == expected);
-}
+//     assert(result == expected);
+// }

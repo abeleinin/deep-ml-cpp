@@ -27,19 +27,19 @@ VectorXd solve_jacobi(const MatrixXd& A, const VectorXd& b, int n)
     return x_new;
 }
 
-int main(void)
-{
-    MatrixXd A(3, 3);
-    A << 5, -2, 3,
-         -3, 9, 1,
-         2, -1, -7;
+// int main(void)
+// {
+//     MatrixXd A(3, 3);
+//     A << 5, -2, 3,
+//          -3, 9, 1,
+//          2, -1, -7;
 
-    VectorXd b(3);
-    b << -1, 2, 3;
+//     VectorXd b(3);
+//     b << -1, 2, 3;
 
-    VectorXd result = solve_jacobi(A, b, 2);
+//     VectorXd result = solve_jacobi(A, b, 2);
 
-    std::cout << result << std::endl;
+//     std::cout << result << std::endl;
 
-    return 0;
-}
+//     return 0;
+// }

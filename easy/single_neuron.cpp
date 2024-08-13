@@ -5,10 +5,7 @@
 using namespace std;
 using namespace Eigen;
 
-double sigmoid(double x)
-{
-    return 1 / (1 + exp(-x));
-}
+double sigmoid(double x);
 
 pair<VectorXd, float> single_neuron(const MatrixXd& features, 
                                     const VectorXd& labels,
@@ -29,21 +26,21 @@ pair<VectorXd, float> single_neuron(const MatrixXd& features,
     return {prob, mse};
 }
 
-int main(void)
-{
-    MatrixXd features(3, 2);
-    VectorXd labels(3);
-    VectorXd weights(2);
-    features << 0.5, 1.0,
-                -1.5, -2.0,
-                2.0, 1.5;
-    labels << 0, 1, 0;
-    weights << 0.7, -0.4;
-    float bias = -0.1;
+// int main(void)
+// {
+//     MatrixXd features(3, 2);
+//     VectorXd labels(3);
+//     VectorXd weights(2);
+//     features << 0.5, 1.0,
+//                 -1.5, -2.0,
+//                 2.0, 1.5;
+//     labels << 0, 1, 0;
+//     weights << 0.7, -0.4;
+//     float bias = -0.1;
 
-    pair<VectorXd, float> result = single_neuron(features, labels, weights, bias);
-    cout << result.first << endl;
-    cout << result.second << endl;
+//     pair<VectorXd, float> result = single_neuron(features, labels, weights, bias);
+//     cout << result.first << endl;
+//     cout << result.second << endl;
 
-    return 0;
-}
+//     return 0;
+// }
