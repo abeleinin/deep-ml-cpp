@@ -1,4 +1,5 @@
 #include "test_easy.h"
+#include "test_utils.h"
 
 TEST_CASE("Test accuracy_score") 
 {

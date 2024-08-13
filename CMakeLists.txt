@@ -17,6 +17,7 @@ set(TEST_DIR ${CMAKE_SOURCE_DIR}/tests)
 include_directories(/opt/homebrew/include/eigen3)
 include_directories(/opt/homebrew/include/)
 include_directories(${EASY_DIR})
+include_directories(${MEDIUM_DIR})
 
 # Collect all source files
 file(GLOB EASY_SRCS "${EASY_DIR}/*.cpp")
@@ -33,11 +34,14 @@ find_package(Catch2 3 REQUIRED)
 
 # Add test executable
 add_executable(test_easy ${TEST_DIR}/test_easy.cpp)
+add_executable(test_medium ${TEST_DIR}/test_medium.cpp)
 
 # Link with object libraries if necessary
 # These tests can use the Catch2-provided main
-target_link_libraries(test_easy PRIVATE easy_objs medium_objs Catch2::Catch2WithMain)
+target_link_libraries(test_easy PRIVATE easy_objs Catch2::Catch2WithMain)
+target_link_libraries(test_medium PRIVATE medium_objs Catch2::Catch2WithMain)
 
 # Define tests if using CTest (optional)
 enable_testing()
 add_test(NAME TestEasy COMMAND test_easy)
+add_test(NAME TestMedium COMMAND test_medium)
