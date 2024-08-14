@@ -20,4 +20,9 @@ vector<vector<double>> calculated_covariance_matrix(const vector<vector<double>>
  */
 VectorXd solve_jacobi(const MatrixXd& A, const VectorXd& b, int n);
 
+/**
+ * 
+ */
+vector<double> calculate_eigenvalues(const vector<vector<double>>& matrix);
+
 #endif // TEST_MEDIUM_H

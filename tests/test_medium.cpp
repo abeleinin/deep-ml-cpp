@@ -1,6 +1,8 @@
 #include "test_medium.h"
 #include "test_utils.h"
 
+#include <iostream>
+
 TEST_CASE("Test calcluate_covariance_matrix")
 {
     vector<vector<double>> features, expected, result;
@@ -28,4 +30,14 @@ TEST_CASE("Test solve_jacobi")
     expected << 0.146, 0.2032, -0.5175;
 
     REQUIRE_CLOSE(result, expected, 1e-4);
+}
+
+TEST_CASE("Test calculate_eigenvalues")
+{
+    vector<vector<double>> matrix = {{2, 1}, {1, 2}};
+    vector<double> expected = {3.0, 1.0};
+
+    vector<double> result = calculate_eigenvalues(matrix); 
+
+    REQUIRE(result == expected);
 }
