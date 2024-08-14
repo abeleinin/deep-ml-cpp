@@ -41,3 +41,26 @@ TEST_CASE("Test calculate_eigenvalues")
 
     REQUIRE(result == expected);
 }
+
+TEST_CASE("Test matrix_transformation")
+{
+    MatrixXd A(2, 2);
+    A << 1, 2,
+         3, 4; 
+
+    MatrixXd T(2, 2);
+    T << 2, 0,
+         0, 2; 
+
+    MatrixXd S(2, 2);
+    S << 1, 1,
+         0, 1; 
+    
+    MatrixXd expected(2,2);
+    expected << 0.5, 1.5,
+                1.5, 3.5;
+
+    MatrixXd result = transform_matrix(A, T, S);
+
+    REQUIRE(result == expected);
+}

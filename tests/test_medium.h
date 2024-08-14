@@ -25,4 +25,9 @@ VectorXd solve_jacobi(const MatrixXd& A, const VectorXd& b, int n);
  */
 vector<double> calculate_eigenvalues(const vector<vector<double>>& matrix);
 
+/**
+ * 
+ */
+MatrixXd transform_matrix(const MatrixXd& A, const MatrixXd& T, const MatrixXd& S);
+
 #endif // TEST_MEDIUM_H
