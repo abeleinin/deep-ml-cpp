@@ -256,3 +256,13 @@ TEST_CASE("Test vector_to_diagonal")
 
     REQUIRE(x == res.diagonal());
 }
+
+TEST_CASE("Test log_softmax")
+{
+    vector<double> a = {1, 2, 3};
+    vector<double> expected = {-2.4076, -1.4076, -0.4076};
+
+    log_softmax(a);
+
+    REQUIRE_CLOSE(a, expected, 1e-4);
+}

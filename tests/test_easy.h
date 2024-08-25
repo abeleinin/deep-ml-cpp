@@ -89,4 +89,9 @@ MatrixXd transpose(const MatrixXd& x);
  */
 MatrixXd make_diagonal(VectorXd x);
 
+/**
+ * 
+ */
+void log_softmax(vector<double>& vec);
+
 #endif // TEST_EASY_H

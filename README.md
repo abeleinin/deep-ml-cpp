@@ -24,6 +24,7 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 27 | [Transformation Matrix from Basis B to C](https://www.deep-ml.com/problem/Transformation%20Matrix%20from%20Basis%20B%20to%20C) | Machine Learning | Easy | [C++](/easy/transform_basis.cpp) |
 | 35 | [Convert Vector to Diagonal Matrix](https://www.deep-ml.com/problem/Convert%20Vector%20to%20Diagonal%20Matrix) | Linear Algebra | Easy | [C++](easy/vector_to_diagongal_matrix.cpp) |
 | 36 | [Calculate Accuracy Score](https://www.deep-ml.com/problem/Calculate%20Accuracy%20Score) | Linear Algebra | Easy | [C++](easy/accuracy_score.cpp) |
+| 39 | [Log Softmax](https://www.deep-ml.com/problem/Log%20Softmax) | Deep Learning | Easy | [C++](easy/log_softmax.cpp) |
 
 ## Dependencies
 
