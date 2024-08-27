@@ -94,4 +94,9 @@ MatrixXd make_diagonal(VectorXd x);
  */
 void log_softmax(vector<double>& vec);
 
+/**
+ * 
+ */
+double relu(const double& z);
+
 #endif // TEST_EASY_H

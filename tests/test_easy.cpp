@@ -266,3 +266,17 @@ TEST_CASE("Test log_softmax")
 
     REQUIRE_CLOSE(a, expected, 1e-4);
 }
+
+TEST_CASE("Test relu")
+{
+    double result;
+
+    result = relu(0.5);
+    REQUIRE(result == 0.5);
+
+    result = relu(-1);
+    REQUIRE(result == 0);
+
+    result = relu(1);
+    REQUIRE(result == 1);
+}
