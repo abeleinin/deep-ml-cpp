@@ -280,3 +280,23 @@ TEST_CASE("Test relu")
     result = relu(1);
     REQUIRE(result == 1);
 }
+
+TEST_CASE("Test ridge_loss")
+{
+
+    MatrixXd X(4, 2);
+    X << 1, 1,
+         2, 1, 
+         3, 1,
+         4, 1;
+    VectorXd w(2);
+    w << 0.2, 2.0;
+    VectorXd y_true(4);
+    y_true << 2, 3, 4, 5;
+
+    double expected = 2.204;
+
+    double result = ridge_loss(X, w, y_true, 0.1);
+    
+    REQUIRE_CLOSE(result, expected, 1e-4);
+}

@@ -99,4 +99,9 @@ void log_softmax(vector<double>& vec);
  */
 double relu(const double& z);
 
+/**
+ * 
+ */
+double ridge_loss(const MatrixXd& X, const VectorXd& w, const VectorXd& y_true, double alpha);
+
 #endif // TEST_EASY_H
