@@ -2,20 +2,11 @@
 
 using namespace Eigen;
 
-#include <iostream>
-
 double ridge_loss(const MatrixXd& X, const VectorXd& w, const VectorXd& y_true, double alpha)
 {
-    double mse = 0.0;
-    for (int i = 0; i < w.size(); i++) {
-        mse += pow(y_true(i) - (X(i) * w)(i), 2);
-    }
+    double mse = (y_true - (X * w)).array().square().mean();
+    double sqr_coef = w.array().square().sum();
 
-    double penalty = 0.0;
-    for (auto w_i : w) {
-        penalty += pow(w_i, 2);
-    }
-
-    // loss 
-    return mse + alpha * penalty;
+    // loss: mse + pentaly 
+    return mse + alpha * sqr_coef;
 }
