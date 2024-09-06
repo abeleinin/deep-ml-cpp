@@ -104,4 +104,9 @@ double relu(const double& z);
  */
 double ridge_loss(const MatrixXd& X, const VectorXd& w, const VectorXd& y_true, double alpha);
 
+/**
+ * 
+ */
+double leaky_relu(double x, double alpha = 0.01);
+
 #endif // TEST_EASY_H

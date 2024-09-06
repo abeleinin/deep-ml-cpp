@@ -300,3 +300,11 @@ TEST_CASE("Test ridge_loss")
     
     REQUIRE_CLOSE(result, expected, 1e-4);
 }
+
+TEST_CASE("Test leaky_relu")
+{
+    REQUIRE(leaky_relu(0) == 0);
+    REQUIRE(leaky_relu(1) == 1);
+    REQUIRE(leaky_relu(-1) == -0.01);
+    REQUIRE(leaky_relu(-2, 0.1) == -0.2);
+}

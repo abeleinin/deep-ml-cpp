@@ -26,7 +26,8 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 36 | [Calculate Accuracy Score](https://www.deep-ml.com/problem/Calculate%20Accuracy%20Score) | Linear Algebra | Easy | [C++](easy/accuracy_score.cpp) |
 | 39 | [Log Softmax](https://www.deep-ml.com/problem/Log%20Softmax) | Deep Learning | Easy | [C++](easy/log_softmax.cpp) |
 | 42 | [ReLU Activation Function](https://www.deep-ml.com/problem/ReLU%20Activation%20Function) | Deep Learning | Easy | [C++](easy/relu.cpp) |
-| 42 | [Ridge Regression Loss](https://www.deep-ml.com/problem/Ridge%20Regression%20Loss) | Machine Learning | Easy | [C++](easy/ridge_loss.cpp) |
+| 43 | [Ridge Regression Loss](https://www.deep-ml.com/problem/Ridge%20Regression%20Loss) | Machine Learning | Easy | [C++](easy/ridge_loss.cpp) |
+| 44 | [Leaky ReLU Activation Function](https://www.deep-ml.com/problem/Leaky%20ReLU) | Deep Learning | Easy | [C++](easy/leaky_relu.cpp) |
 
 ## Dependencies
 
