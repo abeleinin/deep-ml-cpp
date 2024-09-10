@@ -30,4 +30,9 @@ vector<double> calculate_eigenvalues(const vector<vector<double>>& matrix);
  */
 MatrixXd transform_matrix(const MatrixXd& A, const MatrixXd& T, const MatrixXd& S);
 
+/**
+ * 
+ */
+optional<vector<vector<double>>> inverse_2x2(const vector<vector<double>>& matrix);
+
 #endif // TEST_MEDIUM_H

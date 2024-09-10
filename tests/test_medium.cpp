@@ -64,3 +64,14 @@ TEST_CASE("Test matrix_transformation")
 
     REQUIRE(result == expected);
 }
+
+TEST_CASE("Test 2x2 Matrix Inverse")
+{
+    vector<vector<double>> matrix = {{4, 7}, {2, 6}};
+
+    auto result = inverse_2x2(matrix);
+
+    vector<vector<double>> expected = {{0.6, -0.7}, {-0.2, 0.4}};
+
+    REQUIRE(result == expected);
+}

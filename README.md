@@ -13,6 +13,7 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 5  | [Scalar Multiplication of a Matrix](https://www.deep-ml.com/problem/Scalar%20Multiplication%20of%20a%20Matrix) | Linear Algebra | Easy | [C++](easy/scalar_multiply.cpp) |
 | 6  | [Calculate Eigenvalues of Matrix](https://www.deep-ml.com/problem/Calculate%20Eigenvalues%20of%20a%20Matrix) | Linear Algebra | Medium | [C++](medium/calculate_eigenvalues.cpp) |
 | 7  | [Matrix Transformation](https://www.deep-ml.com/problem/Matrix%20Transformation) | Linear Algebra | Medium | [C++](medium/matrix_transformation.cpp) |
+| 8  | [Calculate 2x2 Matrix Inverse](https://www.deep-ml.com/problem/Calculate%202x2%20Matrix%20Inverse) | Linear Algebra | Medium | [C++]() |
 | 10  | [Calculate Covariance Matrix](https://www.deep-ml.com/problem/Calculate%20Covariance%20Matrix) | Linear Algebra | Medium | [C++](medium/calculate_covariance_matrix.cpp) |
 | 11  | [Solve Linear Equations using Jacobi Method](https://www.deep-ml.com/problem/Solve%20Linear%20Equations%20using%20Jacobi%20Method) | Linear Algebra | Medium | [C++](medium/jacobi_method.cpp) |
 | 12  | [Singular Value Decomposition (SVD)](https://www.deep-ml.com/problem/Singular%20Value%20Decomposition%20(SVD)) | Linear Algebra | Hard | [C++](hard/svd.cpp) |
