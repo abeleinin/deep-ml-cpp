@@ -35,4 +35,9 @@ MatrixXd transform_matrix(const MatrixXd& A, const MatrixXd& T, const MatrixXd& 
  */
 optional<vector<vector<double>>> inverse_2x2(const vector<vector<double>>& matrix);
 
+/**
+ * 
+ */
+optional<vector<vector<double>>> matmul(const vector<vector<double>>& a, const vector<vector<double>>& b);
+
 #endif // TEST_MEDIUM_H

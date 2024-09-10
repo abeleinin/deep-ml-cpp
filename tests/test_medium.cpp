@@ -75,3 +75,23 @@ TEST_CASE("Test 2x2 Matrix Inverse")
 
     REQUIRE(result == expected);
 }
+
+TEST_CASE("Test matmul")
+{
+    vector<vector<double>> a = {{1, 2}, {2, 4}};
+    vector<vector<double>> b = {{2, 1}, {3, 4}};
+
+    // 2x2 2x2 = 2x2
+    auto result = matmul(a, b);
+
+    vector<vector<double>> expected = {{8, 9}, {16, 18}};
+
+    REQUIRE(result == expected);
+
+    b = {{2, 1}, {3, 4}, {4, 5}};
+
+    // 2x2 3x2 = null
+    result = matmul(a, b);
+
+    REQUIRE(result == nullopt);
+}
