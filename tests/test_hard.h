@@ -16,4 +16,9 @@ using namespace Eigen;
  */
 SVD svd_2x2_singular_values(const MatrixXd& A);
 
+/**
+ * 
+ */
+double determinant_4_by_4(const vector<vector<double>>& matrix);
+
 #endif // TEST_HARD_H

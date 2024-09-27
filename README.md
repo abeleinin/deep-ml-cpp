@@ -18,6 +18,7 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 10  | [Calculate Covariance Matrix](https://www.deep-ml.com/problem/Calculate%20Covariance%20Matrix) | Linear Algebra | Medium | [C++](medium/calculate_covariance_matrix.cpp) |
 | 11  | [Solve Linear Equations using Jacobi Method](https://www.deep-ml.com/problem/Solve%20Linear%20Equations%20using%20Jacobi%20Method) | Linear Algebra | Medium | [C++](medium/jacobi_method.cpp) |
 | 12  | [Singular Value Decomposition (SVD)](https://www.deep-ml.com/problem/Singular%20Value%20Decomposition%20(SVD)) | Linear Algebra | Hard | [C++](hard/svd.cpp) |
+| 13  | [Determinant of a 4x4 Matrix using Laplace's Expansion](https://www.deep-ml.com/problem/Determinant%20of%20a%204x4%20Matrix%20using%20Laplace's%20Expansion) | Linear Algebra | Hard | [C++](hard/determinant_4_by_4.cpp) |
 | 14 | [Linear Regression Using Normal Equation](https://www.deep-ml.com/problem/Linear%20Regression%20Using%20Normal%20Equation) | Machine Learning | Easy | [C++](/easy/linear_regression_using_normal_equation.cpp) |
 | 15 | [Linear Regression Using Gradient Descent](https://www.deep-ml.com/problem/Linear%20Regression%20Using%20Gradient%20Descent) | Machine Learning | Easy | [C++](/easy/linear_regression_using_gradient_descent.cpp) |
 | 16 | [Feature Scaling Implementation](https://www.deep-ml.com/problem/Feature%20Scaling%20Implementation) | Machine Learning | Easy | [C++](/easy/feature_scaling.cpp) |
