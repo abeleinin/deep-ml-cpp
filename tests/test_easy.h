@@ -109,4 +109,9 @@ double ridge_loss(const MatrixXd& X, const VectorXd& w, const VectorXd& y_true, 
  */
 double leaky_relu(double x, double alpha = 0.01);
 
+/**
+ * 
+ */
+double linear_kernel(VectorXd a, VectorXd b);
+
 #endif // TEST_EASY_H

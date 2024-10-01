@@ -308,3 +308,16 @@ TEST_CASE("Test leaky_relu")
     REQUIRE(leaky_relu(-1) == -0.01);
     REQUIRE(leaky_relu(-2, 0.1) == -0.2);
 }
+
+TEST_CASE("Test linear kernel")
+{
+    VectorXd a(3);
+    a << 1, 2, 3;
+
+    VectorXd b(3);
+    b << 4, 5, 6;
+
+    auto result = linear_kernel(a, b);
+
+    REQUIRE(result == 32);
+}
