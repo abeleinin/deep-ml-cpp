@@ -33,6 +33,7 @@ Solutions to [deep-ml](https://www.deep-ml.com/) in C++ using the [Eigen Library
 | 43 | [Ridge Regression Loss](https://www.deep-ml.com/problem/Ridge%20Regression%20Loss) | Machine Learning | Easy | [C++](easy/ridge_loss.cpp) |
 | 44 | [Leaky ReLU Activation Function](https://www.deep-ml.com/problem/Leaky%20ReLU) | Deep Learning | Easy | [C++](easy/leaky_relu.cpp) |
 | 45 | [Linear Kernel](https://www.deep-ml.com/problem/Linear%20Kernel) | Machine Learning | Easy | [C++](easy/linear_kernel.cpp) |
+| 46 | [Precision Metric](https://www.deep-ml.com/problem/Precision%20Metric) | Machine Learning | Easy | [C++](easy/precision_metric.cpp) |
 
 
 ## Dependencies

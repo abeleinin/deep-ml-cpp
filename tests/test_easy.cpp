@@ -321,3 +321,16 @@ TEST_CASE("Test linear kernel")
 
     REQUIRE(result == 32);
 }
+
+TEST_CASE("Test precision metric")
+{
+    VectorXd y_true(6);
+    VectorXd y_pred(6);
+
+    y_true << 1.0, 0.0, 1.0, 1.0, 0.0, 1.0;
+    y_pred << 1.0, 0.0, 1.0, 0.0, 0.0, 1.0;
+
+    double result = precision(y_true, y_pred);
+
+    REQUIRE(result == 1.0);
+}

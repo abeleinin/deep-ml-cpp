@@ -114,4 +114,9 @@ double leaky_relu(double x, double alpha = 0.01);
  */
 double linear_kernel(VectorXd a, VectorXd b);
 
+/**
+ * 
+ */
+double precision(const VectorXd& y_true, const VectorXd& y_pred);
+
 #endif // TEST_EASY_H
